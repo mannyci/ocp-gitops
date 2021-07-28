@@ -21,7 +21,7 @@ spec:
           name: ldap-bind-password-vn5j5
         insecure: true
         url: >-
-          ldap://inf96.coe.muc.redhat.com/ou=users,dc=coe,dc=muc,dc=redhat,dc=com?uid
+          ldap://inf96.coe.muc.redhat.com/cn=users,cn=accounts,dc=coe,dc=muc,dc=redhat,dc=com?uid
       mappingMethod: claim
       name: ldap
       type: LDAP
