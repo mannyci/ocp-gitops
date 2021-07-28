@@ -19,7 +19,7 @@ spec:
         bindDN: 'uid=mmaiti,cn=users,cn=accounts,dc=coe,dc=muc,dc=redhat,dc=com'
         bindPassword:
           name: ldap-bind-password-vn5j5
-        insecure: false
+        insecure: true
         url: >-
           ldaps://inf96.coe.muc.redhat.com/ou=users,dc=coe,dc=muc,dc=redhat,dc=com?uid
       mappingMethod: claim
