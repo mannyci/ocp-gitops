@@ -1,0 +1,28 @@
+apiVersion: config.openshift.io/v1
+kind: OAuth
+metadata:
+  annotations:
+    include.release.openshift.io/single-node-developer: 'true'
+    release.openshift.io/create-only: 'true'
+  generation: 1
+  name: cluster
+spec: {}
+  identityProviders:
+    - ldap:
+        attributes:
+          email: []
+          id:
+            - dn
+          name:
+            - cn
+          preferredUsername:
+            - uid
+        bindDN: 'uid=mmaiti,cn=users,cn=accounts,dc=coe,dc=muc,dc=redhat,dc=com'
+        bindPassword:
+          name: ldap-bind-password-vn5j5
+        insecure: false
+        url: >-
+          ldaps://inf96.coe.muc.redhat.com/ou=users,dc=coe,dc=muc,dc=redhat,dc=com?uid
+      mappingMethod: claim
+      name: ldap
+      type: LDAP
