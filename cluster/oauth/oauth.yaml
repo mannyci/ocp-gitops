@@ -6,7 +6,7 @@ metadata:
     release.openshift.io/create-only: 'true'
   generation: 1
   name: cluster
-spec: {}
+spec:
   identityProviders:
     - ldap:
         attributes:
