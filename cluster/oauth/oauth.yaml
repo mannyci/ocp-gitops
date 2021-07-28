@@ -4,7 +4,6 @@ metadata:
   annotations:
     include.release.openshift.io/single-node-developer: 'true'
     release.openshift.io/create-only: 'true'
-  generation: 1
   name: cluster
 spec:
   identityProviders:
