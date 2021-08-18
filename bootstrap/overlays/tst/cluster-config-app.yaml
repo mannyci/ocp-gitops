@@ -12,7 +12,7 @@ spec:
     server: https://kubernetes.default.svc
   project: config
   source:
-    path: clusters/tst/argocd/apps/cluster/overlays/default
+    path: clusters/tst/argocd/apps/overlays/default
     repoURL: https://github.com/mannyci/ocp-gitops.git
     targetRevision: master
   syncPolicy:

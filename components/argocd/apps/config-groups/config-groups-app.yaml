@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  annotations:
+    argocd.argoproj.io/compare-options: IgnoreExtraneous
+    argocd.argoproj.io/sync-wave: '11'
+  labels:
+    gitops.ownedBy: cluster-config
+  name: config-oauth
+spec:
+  destination:
+    namespace: openshift-gitops
+    server: https://kubernetes.default.svc
+  project: config
+  source:
+    path: components/configs/groups
+    repoURL: https://github.com/gnunn-gitops/cluster-config.git
+    targetRevision: master
+  syncPolicy:
+    automated:
+      selfHeal: true
