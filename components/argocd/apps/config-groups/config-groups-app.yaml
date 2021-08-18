@@ -14,7 +14,7 @@ spec:
   project: config
   source:
     path: components/configs/groups
-    repoURL: https://github.com/gnunn-gitops/cluster-config.git
+    repoURL: https://github.com/mannyci/ocp-gitops.git
     targetRevision: master
   syncPolicy:
     automated:
