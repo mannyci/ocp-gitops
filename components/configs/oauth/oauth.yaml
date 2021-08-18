@@ -20,7 +20,7 @@ spec:
             - uid
         bindDN: 'uid=mmaiti,cn=users,cn=accounts,dc=coe,dc=muc,dc=redhat,dc=com'
         bindPassword:
-          name: ldap-secret
+          name: ldap-bind-password
         insecure: true
         url: >-
           ldap://inf96.coe.muc.redhat.com/cn=users,cn=accounts,dc=coe,dc=muc,dc=redhat,dc=com?uid
