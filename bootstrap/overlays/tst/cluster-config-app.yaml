@@ -8,7 +8,7 @@ metadata:
     env: test
 spec:
   destination:
-    namespace: argocd
+    namespace: openshift-gitops
     server: https://kubernetes.default.svc
   project: config
   source:
