@@ -5,3 +5,4 @@ namespace: openshift-gitops
 
 resources:
 - ../../../../../../components/argocd/apps/config-oauth/base
+- ../../../../../../components/argocd/apps/config-groups/base
