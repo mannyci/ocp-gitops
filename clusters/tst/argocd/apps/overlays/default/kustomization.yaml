@@ -6,13 +6,8 @@ namespace: openshift-gitops
 resources:
 - ../../../../../../components/argocd/apps/config-oauth/base
 - ../../../../../../components/argocd/apps/config-groups/base
+- ../../../../../../components/argocd/apps/config-clusterversion/base
 
-patches:
-- patch: |-
-    - op: add
-      path: /metadata/labels
-      value:
-        gitops.ownedBy: cluster-config
-        env: test
-  target:
-    kind: Application
+commonLabels:
+  env: test
+  gitops.ownedBy: cluster-config

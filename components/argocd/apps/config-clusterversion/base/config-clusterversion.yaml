@@ -4,14 +4,14 @@ metadata:
   annotations:
     argocd.argoproj.io/compare-options: IgnoreExtraneous
     argocd.argoproj.io/sync-wave: '11'
-  name: config-oauth
+  name: config-clusterversion
 spec:
   destination:
     namespace: openshift-gitops
     server: https://kubernetes.default.svc
   project: config
   source:
-    path: components/configs/oauth
+    path: components/configs/clusterversion
     repoURL: https://github.com/mannyci/ocp-gitops.git
     targetRevision: master
   syncPolicy:
